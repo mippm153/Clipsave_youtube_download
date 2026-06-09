@@ -1,156 +1,236 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="ClipSave is a source-available desktop downloader for macOS and Windows. Save public videos, playlists, MP4 files, and MP3 audio locally."
+      content="ClipSave는 macOS와 Windows에서 공개 영상과 재생목록을 MP4 또는 MP3로 저장할 수 있는 로컬 데스크톱 앱입니다."
     />
     <meta property="og:title" content="ClipSave" />
     <meta
       property="og:description"
-      content="A local desktop downloader for macOS and Windows. Source-available, private, and built for everyday media saving."
+      content="공개 영상, 재생목록, MP4, MP3 저장을 위한 소스 공개 로컬 데스크톱 앱."
     />
     <meta property="og:type" content="website" />
-    <title>ClipSave - Desktop downloader for Mac and Windows</title>
+    <title>ClipSave - Mac과 Windows를 위한 로컬 미디어 다운로더</title>
     <link rel="icon" href="./assets/icon.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="ClipSave home">
+      <a class="brand" href="#top" aria-label="ClipSave 홈">
         <img src="./assets/icon.png" alt="" />
         <span>ClipSave</span>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="#downloads">Downloads</a>
-        <a href="#features">Features</a>
-        <a href="#license">License</a>
+      <nav aria-label="주요 메뉴">
+        <a href="#downloads" data-ko="다운로드" data-en="Downloads">다운로드</a>
+        <a href="#features" data-ko="기능" data-en="Features">기능</a>
+        <a href="#license" data-ko="라이선스" data-en="License">라이선스</a>
       </nav>
-      <a class="header-link" href="https://github.com/mippm153/Clipsave_youtube_download">GitHub</a>
+      <div class="header-actions">
+        <button class="language-toggle" type="button" data-language-toggle aria-pressed="false">
+          <span data-ko="English" data-en="한국어">English</span>
+        </button>
+        <a class="header-link" href="https://github.com/mippm153/Clipsave_youtube_download">GitHub</a>
+      </div>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Source-available desktop app</p>
-          <h1>ClipSave</h1>
-          <p class="lede">
-            A clean Mac and Windows desktop downloader for public media. Paste a link, choose MP4 or MP3, and watch every download move through a friendly queue.
-          </p>
-          <p class="lede korean">
-            다운로드 권한이 있는 공개 영상을 MP4 또는 MP3로 저장할 수 있는 로컬 데스크톱 앱입니다. 링크를 붙여넣고 형식을 고르면 진행 상황을 깔끔하게 확인할 수 있습니다.
+      <section class="hero-band">
+        <div class="hero-inner">
+          <p class="eyebrow" data-ko="로컬 미디어 다운로더" data-en="Local media downloader">로컬 미디어 다운로더</p>
+          <h1 data-ko="ClipSave" data-en="ClipSave">ClipSave</h1>
+          <p
+            class="lede"
+            data-ko="공개 영상과 재생목록을 Mac과 Windows에서 MP4 또는 MP3로 저장하세요. 링크를 붙여넣고 형식을 고르면 진행 상황과 완료 파일을 한 화면에서 확인할 수 있습니다."
+            data-en="Save public videos and playlists as MP4 or MP3 on Mac and Windows. Paste a link, choose a format, and keep progress and completed files visible in one calm dashboard."
+          >
+            공개 영상과 재생목록을 Mac과 Windows에서 MP4 또는 MP3로 저장하세요. 링크를 붙여넣고 형식을 고르면 진행 상황과 완료 파일을 한 화면에서 확인할 수 있습니다.
           </p>
           <div class="hero-actions" id="downloads">
-            <a class="button primary" href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-mac-arm64.zip">
-              Download for macOS
+            <a
+              class="button light"
+              href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-mac-arm64.zip"
+              data-ko="macOS용 다운로드"
+              data-en="Download for macOS"
+            >
+              macOS용 다운로드
             </a>
-            <a class="button secondary" href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-win-x64.zip">
-              Download for Windows
+            <a
+              class="button ghost"
+              href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-win-x64.zip"
+              data-ko="Windows용 다운로드"
+              data-en="Download for Windows"
+            >
+              Windows용 다운로드
             </a>
           </div>
-          <p class="small-note">Version 1.4.0 · Apple Silicon macOS · Windows x64</p>
+          <p
+            class="small-note"
+            data-ko="버전 1.4.0 · Apple Silicon macOS · Windows x64"
+            data-en="Version 1.4.0 · Apple Silicon macOS · Windows x64"
+          >
+            버전 1.4.0 · Apple Silicon macOS · Windows x64
+          </p>
         </div>
+      </section>
 
-        <figure class="product-shot" aria-label="ClipSave app screenshot">
-          <img src="./assets/clipsave-app-screenshot.png" alt="ClipSave desktop app showing URL input, MP4 and MP3 options, queue counters, download progress, and completed downloads" />
+      <section class="showcase-band">
+        <figure class="product-shot" aria-label="ClipSave 앱 화면">
+          <img src="./assets/clipsave-app-screenshot.png" alt="URL 입력, MP4와 MP3 선택, 대기열, 진행 상태, 다운로드 완료 영역을 보여주는 ClipSave 데스크톱 앱 화면" />
         </figure>
       </section>
 
-      <section class="demo-section" aria-label="ClipSave product demo">
-        <div class="section-intro compact">
-          <p class="eyebrow">Product demo</p>
-          <h2>From link to finished file.</h2>
-          <p>ClipSave keeps the full flow visible: add a URL, choose a format, track progress, and open the completed file.</p>
-          <p class="korean">링크 추가부터 완료 파일 확인까지 한 화면에서 자연스럽게 이어지는 사용 흐름을 제공합니다.</p>
+      <section class="split-band cream">
+        <div class="split-copy">
+          <p class="eyebrow" data-ko="다운로드가 쉬워지는 방식" data-en="A calmer way to download">다운로드가 쉬워지는 방식</p>
+          <h2
+            data-ko="복잡한 로그 대신, 누구나 이해할 수 있는 진행 화면."
+            data-en="Clear progress instead of technical noise."
+          >
+            복잡한 로그 대신, 누구나 이해할 수 있는 진행 화면.
+          </h2>
+          <p
+            data-ko="대기 중, 진행 중, 완료 상태를 카드와 진행 막대로 보여줍니다. 다운로드가 끝나면 완료 목록으로 자동 정리됩니다."
+            data-en="Queue, active, and completed states are shown with simple cards and progress bars. Finished files move into the completed list automatically."
+          >
+            대기 중, 진행 중, 완료 상태를 카드와 진행 막대로 보여줍니다. 다운로드가 끝나면 완료 목록으로 자동 정리됩니다.
+          </p>
         </div>
         <figure class="demo-figure">
-          <img src="./assets/clipsave-demo.gif" alt="Animated preview of ClipSave adding a download and completing progress" />
+          <img src="./assets/clipsave-demo.gif" alt="ClipSave 다운로드 진행 애니메이션" />
         </figure>
       </section>
 
-      <section class="download-grid">
-        <article class="download-card">
+      <section class="download-band">
+        <article>
           <p class="card-label">macOS</p>
-          <h2>Download for Mac</h2>
-          <p>For Apple Silicon Macs. Unzip, right-click the app, and choose Open on first launch if macOS warns about an unsigned app.</p>
-          <a class="button primary" href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-mac-arm64.zip">
-            ClipSave-1.4.0-mac-arm64.zip
-          </a>
+          <h2 data-ko="Mac에서 바로 실행" data-en="Ready for Mac">Mac에서 바로 실행</h2>
+          <p
+            data-ko="Apple Silicon Mac용 zip 파일입니다. 압축을 풀고 앱 아이콘을 열면 바로 사용할 수 있습니다."
+            data-en="A zip build for Apple Silicon Macs. Unzip it, open the app icon, and start saving files locally."
+          >
+            Apple Silicon Mac용 zip 파일입니다. 압축을 풀고 앱 아이콘을 열면 바로 사용할 수 있습니다.
+          </p>
+          <a class="button dark" href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-mac-arm64.zip">ClipSave-1.4.0-mac-arm64.zip</a>
         </article>
-        <article class="download-card">
+        <article>
           <p class="card-label">Windows</p>
-          <h2>Download for Windows</h2>
-          <p>For Windows x64. Unzip the release and double-click ClipSave.exe. No separate Node.js, yt-dlp, or ffmpeg install required.</p>
-          <a class="button primary" href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-win-x64.zip">
-            ClipSave-1.4.0-win-x64.zip
-          </a>
+          <h2 data-ko="Windows에서도 동일하게" data-en="The same flow on Windows">Windows에서도 동일하게</h2>
+          <p
+            data-ko="Windows x64용 zip 파일입니다. Node.js, yt-dlp, ffmpeg를 따로 설치하지 않아도 됩니다."
+            data-en="A zip build for Windows x64. No separate Node.js, yt-dlp, or ffmpeg setup is required."
+          >
+            Windows x64용 zip 파일입니다. Node.js, yt-dlp, ffmpeg를 따로 설치하지 않아도 됩니다.
+          </p>
+          <a class="button dark" href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-win-x64.zip">ClipSave-1.4.0-win-x64.zip</a>
         </article>
       </section>
 
-      <section class="feature-section" id="features">
-        <div class="section-intro">
-          <p class="eyebrow">Built for everyday use</p>
-          <h2>Everything visible, nothing noisy.</h2>
-          <p>ClipSave wraps powerful media tooling in a product interface that normal people can understand.</p>
+      <section class="feature-band" id="features">
+        <div class="section-heading">
+          <p class="eyebrow" data-ko="핵심 기능" data-en="Core features">핵심 기능</p>
+          <h2
+            data-ko="로컬에서 조용하게, 결과물은 깔끔하게."
+            data-en="Local, quiet, and clean by design."
+          >
+            로컬에서 조용하게, 결과물은 깔끔하게.
+          </h2>
         </div>
         <div class="features">
           <article>
             <span>01</span>
-            <h3>Video or audio</h3>
-            <p>Save MP4 video or extract clean MP3 audio from public media you are allowed to download.</p>
+            <h3 data-ko="MP4와 MP3" data-en="MP4 and MP3">MP4와 MP3</h3>
+            <p data-ko="영상 전체 저장 또는 MP3 오디오 추출을 선택할 수 있습니다." data-en="Choose full video downloads or MP3 audio extraction.">영상 전체 저장 또는 MP3 오디오 추출을 선택할 수 있습니다.</p>
           </article>
           <article>
             <span>02</span>
-            <h3>Playlist queue</h3>
-            <p>Add multiple links and playlists. ClipSave processes them in order with clear progress bars.</p>
+            <h3 data-ko="재생목록" data-en="Playlists">재생목록</h3>
+            <p data-ko="단일 영상뿐 아니라 공개 재생목록도 순서대로 처리합니다." data-en="Download single videos or public playlists in order.">단일 영상뿐 아니라 공개 재생목록도 순서대로 처리합니다.</p>
           </article>
           <article>
             <span>03</span>
-            <h3>Quality control</h3>
-            <p>Choose best available, 1080p, 720p, 480p, 360p, 240p, or 144p for video downloads.</p>
+            <h3 data-ko="화질 선택" data-en="Quality choices">화질 선택</h3>
+            <p data-ko="최고 가능 화질, 1080p, 720p, 480p 등 원하는 품질을 고를 수 있습니다." data-en="Pick best available, 1080p, 720p, 480p, and more.">최고 가능 화질, 1080p, 720p, 480p 등 원하는 품질을 고를 수 있습니다.</p>
           </article>
           <article>
             <span>04</span>
-            <h3>Clean output</h3>
-            <p>Intermediate files are cleaned up so only the final MP3 or MP4 stays in your Downloads folder.</p>
+            <h3 data-ko="중간 파일 정리" data-en="Clean output">중간 파일 정리</h3>
+            <p data-ko="완료 후에는 최종 MP3 또는 MP4 파일만 남도록 정리합니다." data-en="After completion, only the final MP3 or MP4 remains.">완료 후에는 최종 MP3 또는 MP4 파일만 남도록 정리합니다.</p>
           </article>
         </div>
       </section>
 
-      <section class="trust-section" id="license">
+      <section class="license-band" id="license">
         <div>
-          <p class="eyebrow">Transparent by design</p>
-          <h2>Source available, local first, no account required.</h2>
-          <p class="korean">소스 공개, 로컬 실행, 계정 없는 사용을 기준으로 설계했습니다.</p>
+          <p class="eyebrow" data-ko="라이선스" data-en="License">라이선스</p>
+          <h2
+            data-ko="개인 사용은 가능하지만, 재사용과 상업적 이용은 허가가 필요합니다."
+            data-en="Personal use is allowed. Reuse and commercial use require permission."
+          >
+            개인 사용은 가능하지만, 재사용과 상업적 이용은 허가가 필요합니다.
+          </h2>
         </div>
-        <div class="trust-list">
-          <p>Runs on your desktop and stores files locally.</p>
-          <p>Bundles yt-dlp and ffmpeg so setup stays simple.</p>
-          <p>Personal, non-commercial use is allowed. Reuse or commercial use requires prior written permission.</p>
-          <p>제작자 허가 없는 재사용, 재배포, 수정, 상업적 이용은 허용되지 않습니다.</p>
-          <p>Unauthorized commercial use may create legal liability where permitted by law.</p>
-          <p>Does not bypass DRM, paid access, private content, or login-protected media.</p>
+        <div class="license-copy">
+          <p
+            data-ko="ClipSave는 소스 공개 프로젝트입니다. 개인적, 비상업적 사용은 허용되지만 제작자의 사전 서면 허가 없이 재사용, 재배포, 수정, 상업적 이용을 할 수 없습니다."
+            data-en="ClipSave is source-available. Personal, non-commercial use is allowed, but reuse, redistribution, modification, or commercial use requires prior written permission from the creator."
+          >
+            ClipSave는 소스 공개 프로젝트입니다. 개인적, 비상업적 사용은 허용되지만 제작자의 사전 서면 허가 없이 재사용, 재배포, 수정, 상업적 이용을 할 수 없습니다.
+          </p>
+          <p
+            data-ko="허가 없는 상업적 이용은 관련 법률에 따라 법적 책임이 발생할 수 있습니다."
+            data-en="Unauthorized commercial use may create legal liability where permitted by law."
+          >
+            허가 없는 상업적 이용은 관련 법률에 따라 법적 책임이 발생할 수 있습니다.
+          </p>
         </div>
       </section>
 
-      <section class="github-section">
+      <section class="github-band">
         <div>
-          <p class="eyebrow">Project source</p>
-          <h2>Review the source, open issues, and follow releases on GitHub.</h2>
-          <p class="korean">소스는 공개되어 있지만, 재사용과 상업적 이용은 제작자 허가가 필요합니다.</p>
+          <p class="eyebrow" data-ko="프로젝트 소스" data-en="Project source">프로젝트 소스</p>
+          <h2 data-ko="GitHub에서 소스와 릴리스를 확인하세요." data-en="Review the source and releases on GitHub.">GitHub에서 소스와 릴리스를 확인하세요.</h2>
         </div>
         <div class="hero-actions">
-          <a class="button secondary" href="https://github.com/mippm153/Clipsave_youtube_download">View source</a>
-          <a class="button secondary" href="https://github.com/mippm153/Clipsave_youtube_download/issues">Report an issue</a>
-          <a class="button secondary" href="https://github.com/mippm153/Clipsave_youtube_download/releases">Release notes</a>
+          <a class="button dark" href="https://github.com/mippm153/Clipsave_youtube_download" data-ko="소스 보기" data-en="View source">소스 보기</a>
+          <a class="button outline" href="https://github.com/mippm153/Clipsave_youtube_download/issues" data-ko="이슈 제보" data-en="Report an issue">이슈 제보</a>
+          <a class="button outline" href="https://github.com/mippm153/Clipsave_youtube_download/releases" data-ko="릴리스 노트" data-en="Release notes">릴리스 노트</a>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>ClipSave is independent source-available software. Use it only for content you have permission to save.</p>
+      <p
+        data-ko="ClipSave는 독립적인 소스 공개 소프트웨어입니다. 저장 권한이 있는 콘텐츠에만 사용하세요."
+        data-en="ClipSave is independent source-available software. Use it only for content you have permission to save."
+      >
+        ClipSave는 독립적인 소스 공개 소프트웨어입니다. 저장 권한이 있는 콘텐츠에만 사용하세요.
+      </p>
     </footer>
+
+    <script>
+      const toggle = document.querySelector("[data-language-toggle]");
+      const translatable = document.querySelectorAll("[data-ko][data-en]");
+
+      function setLanguage(language) {
+        document.documentElement.lang = language;
+        translatable.forEach((node) => {
+          const value = node.dataset[language];
+          if (value) {
+            node.textContent = value;
+          }
+        });
+        toggle.setAttribute("aria-pressed", String(language === "en"));
+      }
+
+      toggle.addEventListener("click", () => {
+        const next = document.documentElement.lang === "ko" ? "en" : "ko";
+        setLanguage(next);
+      });
+
+      setLanguage("ko");
+    </script>
   </body>
 </html>
