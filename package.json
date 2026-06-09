@@ -4,6 +4,7 @@
   "description": "A local desktop app for downloading YouTube videos and playlists with yt-dlp.",
   "main": "src/main.js",
   "private": true,
+  "license": "SEE LICENSE IN LICENSE",
   "author": "Local",
   "scripts": {
     "start": "electron .",

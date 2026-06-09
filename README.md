@@ -1,6 +1,10 @@
 # ClipSave
 
-ClipSave is an open-source desktop app for saving public media you are allowed to download. It runs locally on macOS and Windows, bundles `yt-dlp` and `ffmpeg`, and saves files to `Downloads/ClipSave Downloads`.
+![ClipSave app preview](site/assets/clipsave-readme-preview.svg)
+
+ClipSave is a source-available desktop app for saving public media you are allowed to download. It runs locally on macOS and Windows, bundles `yt-dlp` and `ffmpeg`, and saves files to `Downloads/ClipSave Downloads`.
+
+ClipSave는 다운로드 권한이 있는 공개 미디어를 로컬에서 저장하기 위한 데스크톱 앱입니다. macOS와 Windows에서 실행되며 MP4, MP3, 재생목록 다운로드를 지원합니다.
 
 ## Downloads
 
@@ -70,4 +74,6 @@ ClipSave is intended for public content you have permission to download. It does
 
 ## License
 
-MIT
+ClipSave uses a protected source license. Personal, non-commercial use is allowed. Reuse, redistribution, modification, or commercial use requires prior written permission from the creator.
+
+ClipSave는 보호형 소스 공개 라이선스를 사용합니다. 개인적, 비상업적 사용은 허용되지만 제작자의 사전 서면 허가 없이 재사용, 재배포, 수정, 상업적 이용을 할 수 없습니다.

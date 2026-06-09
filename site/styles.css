@@ -123,6 +123,11 @@ h1 {
   line-height: 1.55;
 }
 
+.korean {
+  margin-top: 14px;
+  word-break: keep-all;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -295,11 +300,41 @@ h1 {
   font-weight: 850;
 }
 
-.download-grid {
+.download-grid,
+.demo-section {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
+}
+
+.download-grid {
   padding: 28px 0 76px;
+}
+
+.demo-section {
+  align-items: center;
+  padding: 76px 0;
+  border-top: 1px solid var(--line);
+}
+
+.section-intro.compact {
+  display: block;
+  margin-bottom: 0;
+}
+
+.demo-figure {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: 0 24px 70px rgba(21, 25, 35, 0.12);
+}
+
+.demo-figure img {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
 }
 
 .download-card {
@@ -416,6 +451,7 @@ footer {
 
   .hero,
   .download-grid,
+  .demo-section,
   .section-intro,
   .trust-section,
   .github-section {

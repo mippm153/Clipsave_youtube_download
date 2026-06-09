@@ -1,0 +1,24 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ClipSave app preview</title>
+  <desc id="desc">A clean desktop downloader interface with a URL field, progress bar, and completed download card.</desc>
+  <rect width="1440" height="900" fill="#FBFAF7"/>
+  <text x="90" y="135" fill="#151923" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800">ClipSave</text>
+  <text x="94" y="188" fill="#646B78" font-family="Inter, Arial, sans-serif" font-size="34">Local desktop downloader for MP4, MP3, playlists, and progress tracking.</text>
+  <rect x="90" y="250" width="1260" height="530" rx="18" fill="#FFFFFF" stroke="#DEDCD3" stroke-width="3"/>
+  <rect x="130" y="300" width="1180" height="90" rx="14" fill="#F2EFE8" stroke="#DEDCD3" stroke-width="2"/>
+  <text x="165" y="356" fill="#646B78" font-family="Inter, Arial, sans-serif" font-size="28">https://youtube.com/watch?v=public-video</text>
+  <rect x="1135" y="318" width="133" height="54" rx="10" fill="#151923"/>
+  <text x="1180" y="352" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">Add</text>
+  <rect x="130" y="430" width="260" height="190" rx="18" fill="#E9EDF3"/>
+  <circle cx="260" cy="525" r="55" fill="#D94F3D"/>
+  <path d="M246 491L300 525L246 559V491Z" fill="#FFFFFF"/>
+  <text x="430" y="478" fill="#151923" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800">Public media playlist</text>
+  <text x="432" y="523" fill="#646B78" font-family="Inter, Arial, sans-serif" font-size="28">MP4 - 1080p - Downloading</text>
+  <rect x="430" y="565" width="800" height="25" rx="12.5" fill="#EDE9DF"/>
+  <rect x="430" y="565" width="560" height="25" rx="12.5" fill="#D94F3D"/>
+  <text x="1250" y="592" fill="#151923" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">70%</text>
+  <rect x="430" y="650" width="290" height="60" rx="10" fill="#ECF8F1"/>
+  <text x="465" y="690" fill="#2C6D52" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">Download complete</text>
+  <rect x="760" y="650" width="250" height="60" rx="10" fill="#F8EFEA"/>
+  <text x="800" y="690" fill="#A93427" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">MP3 ready</text>
+</svg>
