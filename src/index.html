@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClipSave</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Local media downloader</p>
+          <h1>ClipSave</h1>
+          <p id="download-dir" class="muted">저장 위치 확인 중...</p>
+        </div>
+        <button id="open-folder" class="secondary" type="button">저장 폴더</button>
+      </header>
+
+      <section class="composer">
+        <div class="url-row">
+          <label class="field url-field">
+            <span>다운로드 URL</span>
+            <input id="url" type="url" placeholder="공개 영상 또는 재생목록 URL을 붙여넣으세요" autocomplete="off" />
+          </label>
+          <button id="preview" class="secondary" type="button">미리보기</button>
+          <button id="add" class="primary" type="button">대기열 추가</button>
+        </div>
+
+        <div class="controls-grid">
+          <div class="segmented" role="radiogroup" aria-label="다운로드 범위">
+            <label>
+              <input type="radio" name="mode" value="single" checked />
+              <span>단일 영상</span>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="playlist" />
+              <span>재생목록</span>
+            </label>
+          </div>
+
+          <div class="segmented" role="radiogroup" aria-label="출력 형식">
+            <label>
+              <input type="radio" name="output-type" value="video" checked />
+              <span>MP4</span>
+            </label>
+            <label>
+              <input type="radio" name="output-type" value="audio" />
+              <span>MP3</span>
+            </label>
+          </div>
+
+          <label class="field compact" id="quality-options">
+            <span>화질</span>
+            <select id="quality">
+              <option value="best" selected>최고 가능 화질</option>
+              <option value="1080">1080p HD</option>
+              <option value="720">720p</option>
+              <option value="480">480p</option>
+              <option value="360">360p</option>
+              <option value="240">240p</option>
+              <option value="144">144p</option>
+            </select>
+          </label>
+        </div>
+
+        <article id="preview-card" class="preview-card is-hidden">
+          <div class="thumb" id="preview-thumb"></div>
+          <div>
+            <p id="preview-title" class="preview-title"></p>
+            <p id="preview-meta" class="muted"></p>
+          </div>
+        </article>
+      </section>
+
+      <section class="summary-grid">
+        <article class="summary-card">
+          <span>대기 중</span>
+          <strong id="queued-count">0</strong>
+        </article>
+        <article class="summary-card">
+          <span>진행 중</span>
+          <strong id="running-count">0</strong>
+        </article>
+        <article class="summary-card">
+          <span>완료</span>
+          <strong id="complete-count">0</strong>
+        </article>
+      </section>
+
+      <section class="section-card">
+        <div class="section-header">
+          <div>
+            <h2>다운로드 진행</h2>
+            <p class="muted">대기열은 순서대로 하나씩 처리됩니다.</p>
+          </div>
+          <div class="button-row">
+            <button id="resume-queue" class="secondary" type="button">다시 시작</button>
+            <button id="stop-queue" class="danger" type="button">현재 중지</button>
+          </div>
+        </div>
+        <div id="queue-list" class="job-list"></div>
+        <div id="queue-empty" class="empty-state">진행 중이거나 대기 중인 다운로드가 없습니다.</div>
+      </section>
+
+      <section class="section-card">
+        <div class="section-header">
+          <div>
+            <h2>다운로드 완료</h2>
+            <p class="muted">완료된 파일을 바로 확인할 수 있습니다.</p>
+          </div>
+          <button id="clear-history" class="ghost" type="button">완료 기록 지우기</button>
+        </div>
+        <div id="history-list" class="history-list"></div>
+        <div id="history-empty" class="empty-state">아직 완료된 다운로드가 없습니다.</div>
+      </section>
+
+      <p id="toast" class="toast" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>

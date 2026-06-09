@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ClipSave is an open-source desktop downloader for macOS and Windows. Save public videos, playlists, MP4 files, and MP3 audio locally."
+    />
+    <meta property="og:title" content="ClipSave" />
+    <meta
+      property="og:description"
+      content="A local desktop downloader for macOS and Windows. Open source, private, and built for everyday media saving."
+    />
+    <meta property="og:type" content="website" />
+    <title>ClipSave - Desktop downloader for Mac and Windows</title>
+    <link rel="icon" href="./assets/icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ClipSave home">
+        <img src="./assets/icon.png" alt="" />
+        <span>ClipSave</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#downloads">Downloads</a>
+        <a href="#features">Features</a>
+        <a href="#open-source">Open source</a>
+      </nav>
+      <a class="header-link" href="https://github.com/mippm153/Clipsave_youtube_download">GitHub</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Open-source desktop app</p>
+          <h1>ClipSave</h1>
+          <p class="lede">
+            A clean Mac and Windows desktop downloader for public media. Paste a link, choose MP4 or MP3, and watch every download move through a friendly queue.
+          </p>
+          <div class="hero-actions" id="downloads">
+            <a class="button primary" href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-mac-arm64.zip">
+              Download for macOS
+            </a>
+            <a class="button secondary" href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-win-x64.zip">
+              Download for Windows
+            </a>
+          </div>
+          <p class="small-note">Version 1.4.0 · Apple Silicon macOS · Windows x64</p>
+        </div>
+
+        <div class="product-panel" aria-label="ClipSave app preview">
+          <div class="panel-top">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>ClipSave</strong>
+          </div>
+          <div class="input-strip">
+            <span>https://video.example/watch</span>
+            <button type="button">Add</button>
+          </div>
+          <div class="preview-job">
+            <div class="thumb"></div>
+            <div class="job-copy">
+              <div class="line strong"></div>
+              <div class="line short"></div>
+              <div class="progress"><span></span></div>
+              <div class="job-footer">
+                <small>Downloading</small>
+                <small>72%</small>
+              </div>
+            </div>
+          </div>
+          <div class="history-row">
+            <strong>Download complete</strong>
+            <span>MP3 · Open file</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="download-grid">
+        <article class="download-card">
+          <p class="card-label">macOS</p>
+          <h2>Download for Mac</h2>
+          <p>For Apple Silicon Macs. Unzip, right-click the app, and choose Open on first launch if macOS warns about an unsigned app.</p>
+          <a class="button primary" href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-mac-arm64.zip">
+            ClipSave-1.4.0-mac-arm64.zip
+          </a>
+        </article>
+        <article class="download-card">
+          <p class="card-label">Windows</p>
+          <h2>Download for Windows</h2>
+          <p>For Windows x64. Unzip the release and double-click ClipSave.exe. No separate Node.js, yt-dlp, or ffmpeg install required.</p>
+          <a class="button primary" href="https://github.com/mippm153/Clipsave_youtube_download/releases/latest/download/ClipSave-1.4.0-win-x64.zip">
+            ClipSave-1.4.0-win-x64.zip
+          </a>
+        </article>
+      </section>
+
+      <section class="feature-section" id="features">
+        <div class="section-intro">
+          <p class="eyebrow">Built for everyday use</p>
+          <h2>Everything visible, nothing noisy.</h2>
+          <p>ClipSave wraps powerful media tooling in a product interface that normal people can understand.</p>
+        </div>
+        <div class="features">
+          <article>
+            <span>01</span>
+            <h3>Video or audio</h3>
+            <p>Save MP4 video or extract clean MP3 audio from public media you are allowed to download.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Playlist queue</h3>
+            <p>Add multiple links and playlists. ClipSave processes them in order with clear progress bars.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Quality control</h3>
+            <p>Choose best available, 1080p, 720p, 480p, 360p, 240p, or 144p for video downloads.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Clean output</h3>
+            <p>Intermediate files are cleaned up so only the final MP3 or MP4 stays in your Downloads folder.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="trust-section" id="open-source">
+        <div>
+          <p class="eyebrow">Transparent by design</p>
+          <h2>Open source, local first, no account required.</h2>
+        </div>
+        <div class="trust-list">
+          <p>Runs on your desktop and stores files locally.</p>
+          <p>Bundles yt-dlp and ffmpeg so setup stays simple.</p>
+          <p>Released under the MIT License.</p>
+          <p>Does not bypass DRM, paid access, private content, or login-protected media.</p>
+        </div>
+      </section>
+
+      <section class="github-section">
+        <div>
+          <p class="eyebrow">Developers welcome</p>
+          <h2>Review the source, open issues, and follow releases on GitHub.</h2>
+        </div>
+        <div class="hero-actions">
+          <a class="button secondary" href="https://github.com/mippm153/Clipsave_youtube_download">View source</a>
+          <a class="button secondary" href="https://github.com/mippm153/Clipsave_youtube_download/issues">Report an issue</a>
+          <a class="button secondary" href="https://github.com/mippm153/Clipsave_youtube_download/releases">Release notes</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>ClipSave is independent open-source software. Use it only for content you have permission to save.</p>
+    </footer>
+  </body>
+</html>
