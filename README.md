@@ -1,6 +1,6 @@
 # ClipSave
 
-![ClipSave app preview](site/assets/clipsave-readme-preview.svg)
+![ClipSave desktop app screenshot](site/assets/clipsave-app-screenshot.png)
 
 ClipSave is a source-available desktop app for saving public media you are allowed to download. It runs locally on macOS and Windows, bundles `yt-dlp` and `ffmpeg`, and saves files to `Downloads/ClipSave Downloads`.
 

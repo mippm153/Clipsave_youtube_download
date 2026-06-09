@@ -163,38 +163,22 @@ h1 {
   font-size: 14px;
 }
 
-.product-panel {
-  width: min(980px, 100%);
-  padding: 18px;
-  border: 1px solid #d9d5ca;
+.product-shot {
+  width: min(1040px, 100%);
+  margin: 4px 0 0;
+  padding: 12px;
+  border: 1px solid rgba(21, 25, 35, 0.1);
   border-radius: 8px;
-  background: #f2efe8;
-  box-shadow: 0 28px 80px rgba(21, 25, 35, 0.16);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 34px 90px rgba(21, 25, 35, 0.16);
 }
 
-.panel-top {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  height: 34px;
+.product-shot img {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
 }
 
-.panel-top span {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #cbc4b7;
-}
-
-.panel-top strong {
-  margin-left: auto;
-  color: var(--blue);
-  font-size: 13px;
-}
-
-.input-strip,
-.preview-job,
-.history-row,
 .download-card,
 .features article,
 .trust-section,
@@ -202,102 +186,6 @@ h1 {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
-}
-
-.input-strip {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-top: 12px;
-  padding: 12px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.input-strip button {
-  min-height: 34px;
-  border: 0;
-  border-radius: 7px;
-  color: white;
-  background: var(--accent);
-  font-weight: 800;
-}
-
-.preview-job {
-  display: grid;
-  grid-template-columns: 116px 1fr;
-  gap: 16px;
-  margin-top: 12px;
-  padding: 14px;
-}
-
-.thumb {
-  height: 76px;
-  border-radius: 8px;
-  background:
-    linear-gradient(135deg, rgba(217, 79, 61, 0.9), rgba(247, 164, 86, 0.86)),
-    #e9e3d8;
-}
-
-.job-copy {
-  min-width: 0;
-}
-
-.line {
-  height: 12px;
-  border-radius: 999px;
-  background: #d8d4ca;
-}
-
-.line.strong {
-  width: 92%;
-  height: 16px;
-  background: var(--blue);
-}
-
-.line.short {
-  width: 52%;
-  margin-top: 10px;
-}
-
-.progress {
-  height: 10px;
-  margin-top: 18px;
-  overflow: hidden;
-  border-radius: 999px;
-  background: #ede9df;
-}
-
-.progress span {
-  display: block;
-  width: 72%;
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent), #f3a153);
-}
-
-.job-footer,
-.history-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.job-footer {
-  margin-top: 10px;
-  color: var(--muted);
-  font-weight: 800;
-}
-
-.history-row {
-  margin-top: 12px;
-  padding: 13px 14px;
-}
-
-.history-row span {
-  color: var(--green);
-  font-size: 13px;
-  font-weight: 850;
 }
 
 .download-grid,
